@@ -1,0 +1,7 @@
+read_verilog src/*.v pipeline/*.v
+hierarchy -check -top cpu_pipeline
+proc
+opt
+techmap
+opt
+show -format svg -prefix cpu_pipeline_schematic IF_ID
